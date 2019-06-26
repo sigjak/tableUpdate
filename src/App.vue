@@ -34,7 +34,7 @@ export default {}
 @import '~bulma/sass/elements/box.sass';
 @import '~bulma/sass/elements/title.sass';
 @import '~bulma/sass/elements/container.sass';
-@import '~bulma/sass/elements/form.sass';
+@import '~bulma/sass/form/_all.sass';
 @import '~bulma/sass/base/_all.sass';
 @import '~bulma/sass/components/_all.sass';
 body {
