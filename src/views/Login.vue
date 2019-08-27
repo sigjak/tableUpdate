@@ -7,12 +7,7 @@
           <div class="field">
             <p class="control">
               <label class="label">Login</label>
-              <input
-                class="input"
-                v-model="loginData.login"
-                type="text"
-                placeholder="admin"
-              />
+              <input class="input" v-model="loginData.login" type="text" placeholder="admin" />
             </p>
           </div>
 
@@ -28,9 +23,7 @@
             </p>
           </div>
 
-          <button type="submit" class="button" @click.prevent="submitted">
-            Submit
-          </button>
+          <button type="submit" class="button" @click.prevent="submitted">Submit</button>
         </form>
       </div>
     </div>
