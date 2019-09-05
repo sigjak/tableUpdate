@@ -2,7 +2,9 @@
   <div>
     <nav class="navbar is-info bg">
       <div class="navbar-brand">
-        <div class="navbar-item" style="font-weight:bold;font-size:2rem;">IES</div>
+        <div class="navbar-item" style="font-weight:bold;font-size:2rem;">
+          IES
+        </div>
         <a class="navbar-burger">
           <span></span>
           <span></span>
@@ -15,72 +17,129 @@
             <a class="navbar-link">Instruments</a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item" @click="getData('probeuse', 'Microprobe')">Microprobe</a>
+              <a class="navbar-item" @click="getData('probeuse', 'Microprobe')"
+                >Microprobe</a
+              >
               <a class="navbar-item" @click="getData('ftir', 'FTIR')">FTIR</a>
               <a
                 class="navbar-item"
                 @click="getData('thin_sections', 'Thin Sections')"
-              >Thin Sections</a>
+                >Thin Sections</a
+              >
               <a class="navbar-item" @click="getData('sem', 'SEM')">SEM</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item" @click="getData('mssaes', 'Mass Spec AES')">Mass Spec AES</a>
-              <a class="navbar-item" @click="getData('ic1000', 'IC 1000')">IC 1000</a>
-              <a class="navbar-item" @click="getData('ic2000', 'IC 2000')">IC 2000</a>
-              <a class="navbar-item" @click="getData('icpms', 'ICP MS')">ICP MS</a>
-              <a class="navbar-item" @click="getData('icpoes', 'ICP OES')">ICP OES</a>
+              <a class="navbar-item" @click="getData('mssaes', 'Mass Spec AES')"
+                >Mass Spec AES</a
+              >
+              <a class="navbar-item" @click="getData('ic1000', 'IC 1000')"
+                >IC 1000</a
+              >
+              <a class="navbar-item" @click="getData('ic2000', 'IC 2000')"
+                >IC 2000</a
+              >
+              <a class="navbar-item" @click="getData('icpms', 'ICP MS')"
+                >ICP MS</a
+              >
+              <a class="navbar-item" @click="getData('icpoes', 'ICP OES')"
+                >ICP OES</a
+              >
 
-              <a class="navbar-item" @click="getData('icpoes2', 'ICP OES II')">ICP OES II</a>
-              <a class="navbar-item" @click="getData('mcicpms', 'MCICP MS')">MC ICP MS</a>
+              <a class="navbar-item" @click="getData('icpoes2', 'ICP OES II')"
+                >ICP OES II</a
+              >
+              <a class="navbar-item" @click="getData('mcicpms', 'MCICP MS')"
+                >MC ICP MS</a
+              >
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Vehicles</a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item" @click="getData('blue_hilux', 'Blue Hilux')">Blue Hilux</a>
-              <a class="navbar-item" @click="getData('red_hilux', 'Red Hilux')">Red Hilux</a>
-              <a class="navbar-item" @click="getData('opentrailer', 'Open Trailer')">Open Trailer</a>
+              <a
+                class="navbar-item"
+                @click="getData('blue_hilux', 'Blue Hilux')"
+                >Blue Hilux</a
+              >
+              <a class="navbar-item" @click="getData('red_hilux', 'Red Hilux')"
+                >Red Hilux</a
+              >
+              <a
+                class="navbar-item"
+                @click="getData('opentrailer', 'Open Trailer')"
+                >Open Trailer</a
+              >
               <a
                 class="navbar-item"
                 @click="getData('closedtrailer', 'Closed Trailer')"
-              >Closed Trailer</a>
+                >Closed Trailer</a
+              >
 
-              <a class="navbar-item" @click="getData('smalltrailer', 'Small Trailer')">Small Trailer</a>
+              <a
+                class="navbar-item"
+                @click="getData('smalltrailer', 'Small Trailer')"
+                >Small Trailer</a
+              >
               <hr class="navbar-divider" />
-              <a class="navbar-item" @click="getData('viking_a', 'Viking A')">Viking A</a>
-              <a class="navbar-item" @click="getData('viking_b', 'Viking B')">Viking B</a>
-              <a class="navbar-item" @click="getData('warrior', 'Warrior ')">Warrior</a>
+              <a class="navbar-item" @click="getData('viking_a', 'Viking A')"
+                >Viking A</a
+              >
+              <a class="navbar-item" @click="getData('viking_b', 'Viking B')"
+                >Viking B</a
+              >
+              <a class="navbar-item" @click="getData('warrior', 'Warrior ')"
+                >Warrior</a
+              >
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Houses</a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item" @click="getData('helluhraun', 'Helluhraun')">Helluhraun</a>
-              <a class="navbar-item" @click="getData('dyngja', 'Dyngja')">Dyngja</a>
-              <a class="navbar-item" @click="getData('vidimelur', 'Víðimelur')">Víðimelur</a>
+              <a
+                class="navbar-item"
+                @click="getData('helluhraun', 'Helluhraun')"
+                >Helluhraun</a
+              >
+              <a class="navbar-item" @click="getData('dyngja', 'Dyngja')"
+                >Dyngja</a
+              >
+              <a class="navbar-item" @click="getData('vidimelur', 'Víðimelur')"
+                >Víðimelur</a
+              >
               <hr class="navbar-divider" />
-              <a class="navbar-item" @click="getData('gasdetect', 'Gas Detectors')">Gas Detectors</a>
-              <a class="navbar-item" @click="getData('firstaid', 'First Aid')">First Aid</a>
-              <a class="navbar-item" @click="getData('iridium', 'Iridium Phones')">Iridium Phones</a>
+              <a
+                class="navbar-item"
+                @click="getData('gasdetect', 'Gas Detectors')"
+                >Gas Detectors</a
+              >
+              <a class="navbar-item" @click="getData('firstaid', 'First Aid')"
+                >First Aid</a
+              >
+              <a
+                class="navbar-item"
+                @click="getData('iridium', 'Iridium Phones')"
+                >Iridium Phones</a
+              >
             </div>
           </div>
           <a class="navbar-item" @click="getYearData('All Years')">all years</a>
           <a class="navbar-item" @click="getYearData(lastYear)">
-            {{
-            lastYear
-            }}
+            {{ lastYear }}
           </a>
           <a class="navbar-item" @click="getYearData(currentYear)">
-            {{
-            currentYear
-            }}
+            {{ currentYear }}
           </a>
 
-          <a class="navbar-item">
+          <span class="navbar-item">
             <span>input year: &nbsp;</span>
-            <input class="has-text-centered" type="text" id="inpYr" style="width:40px;" />
-          </a>
+            <input
+              class="has-text-centered"
+              type="text"
+              id="inpYr"
+              style="width:40px;"
+            />
+          </span>
 
           <a class="navbar-item">
             <span style="margin-left:-15px;" @click="getYearData('inpYr')">
@@ -89,19 +148,23 @@
           </a>
         </div>
         <div class="navbar-end">
-          <a href="https://microprobe.hi.is/selectItem" class="navbar-item">To Booking</a>
+          <a href="https://microprobe.hi.is/selectItem" class="navbar-item"
+            >To Booking</a
+          >
           <a href="http://jardvis.hi.is" class="navbar-item">Exit</a>
         </div>
       </div>
     </nav>
     <div class="container">
-      <div class="tableName has-text-white has-text-centered is-size-2 has-text-weight-bold">
+      <div
+        class="tableName has-text-white has-text-centered is-size-2 has-text-weight-bold"
+      >
         {{ this.unitName }}
         {{ this.yearSelected }}
       </div>
-      <p
-        class="has-text-white has-text-centered is-size-4"
-      >Click on column headers to filter content</p>
+      <p class="has-text-white has-text-centered is-size-4">
+        Click on column headers to filter content
+      </p>
       <vue-good-table
         @on-selected-rows-change="selectionChanged"
         :columns="columns"
@@ -116,10 +179,22 @@
         }"
       >
         <div slot="selected-row-actions">
-          <button v-if="confirm" class="button dl is-success is-small" @click="confirming">Confirm</button>
-          <button class="button is-warning is-small" @click="openModal">Update Selected</button>
-          <button @click="sweetDelete" class="dl button is-danger is-small">Delete Selected</button>
-          <button @click="sweetName" class="button is-info is-small">Download selected</button>
+          <button
+            v-if="confirm"
+            class="button dl is-success is-small"
+            @click="confirming"
+          >
+            Confirm
+          </button>
+          <button class="button is-warning is-small" @click="openModal">
+            Update Selected
+          </button>
+          <button @click="sweetDelete" class="dl button is-danger is-small">
+            Delete Selected
+          </button>
+          <button @click="sweetName" class="button is-info is-small">
+            Download selected
+          </button>
         </div>
       </vue-good-table>
     </div>
@@ -129,7 +204,9 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title has-text-centered">Update {{ unitName }}</p>
+          <p class="modal-card-title has-text-centered">
+            Update {{ unitName }}
+          </p>
           <button @click="closeModal" class="delete"></button>
         </header>
         <section class="modal-card-body">
@@ -180,14 +257,20 @@
                       <div class="field is-grouped">
                         <div class="control">
                           <label class="cbox checkbox">
-                            <input v-model="updateArray[index].am" type="checkbox" />
+                            <input
+                              v-model="updateArray[index].am"
+                              type="checkbox"
+                            />
                             AM
                           </label>
                         </div>
 
                         <div class="control">
                           <label class="cbox checkbox">
-                            <input v-model="updateArray[index].pm" type="checkbox" />
+                            <input
+                              v-model="updateArray[index].pm"
+                              type="checkbox"
+                            />
                             PM
                           </label>
                         </div>
@@ -217,7 +300,13 @@
           </form>
         </section>
         <footer class="modal-card-foot">
-          <button @click.prevent="update" type="submit" class="button is-success">Update</button>
+          <button
+            @click.prevent="update"
+            type="submit"
+            class="button is-success"
+          >
+            Update
+          </button>
           <button @click="closeModal" class="button">Cancel</button>
         </footer>
       </div>
