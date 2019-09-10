@@ -444,8 +444,16 @@ export default {
     }
   },
   created() {
-    this.yearSelected = this.currentYear
-
+    if (!this.unitName) {
+      this.yearSelected = localStorage.getItem('currentYear')
+      this.unitName = localStorage.getItem('unitName')
+      this.tablename = localStorage.getItem('tablename')
+    } else {
+      this.yearSelected = this.currentYear
+      localStorage.setItem('currentYear', this.currentYear)
+      localStorage.setItem('unitName', this.unitName)
+      localStorage.setItem('tablename', this.tablename)
+    }
     this.getData(this.tablename, this.unitName)
   },
   computed: {
