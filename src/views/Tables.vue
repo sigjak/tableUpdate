@@ -28,7 +28,9 @@
               >
               <a class="navbar-item" @click="getData('sem', 'SEM')">SEM</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item" @click="getData('mssaes', 'Mass Spec AES')"
+              <a
+                class="navbar-item"
+                @click="getData('massaes', 'Mass Spec AES')"
                 >Mass Spec AES</a
               >
               <a class="navbar-item" @click="getData('ic1000', 'IC 1000')"
@@ -766,6 +768,7 @@ export default {
 }
 .container {
   min-height: 800px;
+
   padding-bottom: 4em;
 }
 .vgt-selection-info-row {
@@ -778,6 +781,7 @@ export default {
 }
 .bg {
   margin-top: -7px;
+
   margin-bottom: 2rem;
 }
 </style>
