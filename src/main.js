@@ -12,9 +12,9 @@ import VueSweetalert2 from 'vue-sweetalert2'
 
 Vue.use(VueSweetalert2)
 const base = axios.create({
-  // baseURL: 'http://localhost/tableApi/'
-  baseURL: 'https://microprobe.hi.is/aold/my-app/tableApi/',
-  headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-cache' }
+  baseURL: 'http://localhost/tableApi/'
+  //baseURL: 'https://microprobe.hi.is/aold/my-app/tableApi/',
+  //headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-cache' }
 })
 
 library.add(faHandPointRight)

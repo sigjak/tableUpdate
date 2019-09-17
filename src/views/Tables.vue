@@ -753,7 +753,7 @@ export default {
 <style lang="scss">
 .commScroll {
   display: block;
-  max-height: 50px !important;
+  max-height: 60px !important;
   overflow: auto;
 }
 
