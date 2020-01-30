@@ -9,7 +9,7 @@ import VueGoodTablePlugin from 'vue-good-table'
 import XLSX from 'xlsx'
 import 'vue-good-table/dist/vue-good-table.css'
 import VueSweetalert2 from 'vue-sweetalert2'
-
+import 'sweetalert2/dist/sweetalert2.min.css'
 Vue.use(VueSweetalert2)
 const base = axios.create({
   baseURL: 'http://localhost/tableApi/'

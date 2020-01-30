@@ -3,8 +3,8 @@ module.exports = {
     require('autoprefixer'),
     require('@fullhuman/postcss-purgecss')({
       content: ['./src/**/*.vue', './public/index.html'],
-      whitelistPatterns: [/vgt/],
-      whitelistPatternsChildren: [/vgt/]
+      whitelistPatterns: [/vgt/, /swal/],
+      whitelistPatternsChildren: [/vgt/, /swal/]
     })
   ]
 }
