@@ -139,7 +139,7 @@
               class="has-text-centered"
               type="text"
               id="inpYr"
-              style="width:40px;"
+              style="width:40px;margin-left:.5em;"
             />
           </span>
 
@@ -174,6 +174,7 @@
         max-height="800px"
         :select-options="{ enabled: true }"
         :search-options="{ enabled: true }"
+        styleClass="vgt-table"
         :pagination-options="{
           enabled: true,
           mode: 'pages',
@@ -387,59 +388,59 @@ export default {
       rows: [],
       thinColumns: [
         {
-          label: '27 Sld',
+          label: '27 Slide',
           field: 'slide27',
           type: 'string',
-          width: '20px',
+          width: '40px',
           sortable: false
         },
         {
-          label: '27 Cnt',
+          label: '27 Coatd',
           field: 'slide27coated',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         },
         {
           label: '1" Rnd',
           field: 'oneround',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         },
         {
           label: '1" Pol',
           field: 'onepolished',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         },
         {
-          label: 'Mt Coat',
+          label: 'Mount Coatd',
           field: 'mountcoated',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         },
         {
           label: '1" 7',
           field: 'oneseven',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         },
         {
           label: 'C',
           field: 'carbon',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         },
         {
           label: 'Re pol',
           field: 'repolish',
           type: 'string',
-          width: '20px',
+          width: '60px',
           sortable: false
         }
       ]

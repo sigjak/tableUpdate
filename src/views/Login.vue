@@ -40,23 +40,7 @@
 export default {
   data() {
     return {
-      users: [
-        'sigjak',
-        'ghg',
-        'svandis',
-        'steinij',
-        'svst',
-        'rosao',
-        'aj',
-        'aka',
-        'ríkey',
-        'iris',
-        'irisd',
-        'halli',
-        'saemi',
-        'glumur',
-        'rebekka'
-      ],
+      adminUsers: [],
 
       loginData: {
         login: '',
@@ -74,17 +58,20 @@ export default {
       })
     },
     submitted() {
-      if (
-        this.users.includes(this.loginData.login) &&
-        this.loginData.password === 'askja'
-      ) {
-        this.$router.push({
-          name: 'tables',
-          params: { table: 'probeuse', unit: 'Microprobe' }
-        })
-      } else {
-        this.showLoginError()
-      }
+      this.$http.get('getUsers.php').then(response => {
+        this.adminUsers = response.data
+        if (
+          this.adminUsers.includes(this.loginData.login) &&
+          this.loginData.password === 'askja'
+        ) {
+          this.$router.push({
+            name: 'tables',
+            params: { table: 'probeuse', unit: 'Microprobe' }
+          })
+        } else {
+          this.showLoginError()
+        }
+      })
     }
   }
 }
