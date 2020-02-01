@@ -388,59 +388,67 @@ export default {
       rows: [],
       thinColumns: [
         {
-          label: '27 Slide',
+          label: '27mm Slide',
           field: 'slide27',
           type: 'string',
-          width: '40px',
+          width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: '27 Coatd',
+          label: '27mm Coated',
           field: 'slide27coated',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: '1" Rnd',
+          label: '1"round polished',
           field: 'oneround',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: '1" Pol',
+          label: '1"round coated',
           field: 'onepolished',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: 'Mount Coatd',
+          label: '1"plug coated',
           field: 'mountcoated',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: '1" 7',
+          label: '1"plug 7-smps',
           field: 'oneseven',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: 'C',
+          label: 'Carb coating',
           field: 'carbon',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         },
         {
-          label: 'Re pol',
+          label: 'Re polishing',
           field: 'repolish',
           type: 'string',
           width: '60px',
+          thClass: 'tsheaderClass',
           sortable: false
         }
       ]
@@ -756,6 +764,9 @@ export default {
   display: block;
   max-height: 60px !important;
   overflow: auto;
+}
+.tsheaderClass {
+  font-size: 10px;
 }
 
 .dateInp {
