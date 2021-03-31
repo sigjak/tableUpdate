@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{ table }}
     <nav class="navbar is-info bg">
       <div class="navbar-brand">
         <div class="navbar-item" style="font-weight:bold;font-size:2rem;">
@@ -65,6 +66,16 @@
               >
               <a class="navbar-item" @click="getData('red_hilux', 'Red Hilux')"
                 >Red Hilux</a
+              >
+              <a
+                class="navbar-item"
+                @click="getData('landrover_35', 'LandRover 35')"
+                >LandRover 35</a
+              >
+              <a
+                class="navbar-item"
+                @click="getData('landrover_38', 'LandRover 38')"
+                >LandRover 38</a
               >
               <a
                 class="navbar-item"
